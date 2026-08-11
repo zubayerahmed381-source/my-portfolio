@@ -1,0 +1,318 @@
+```css
+/* ==============================
+   General Settings
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f7fa;
+    color: #222;
+    line-height: 1.6;
+}
+
+
+/* ==============================
+   Navigation Bar
+================================= */
+
+nav {
+    width: 100%;
+    background-color: #111827;
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 18px 8%;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #38bdf8;
+}
+
+
+/* ==============================
+   Hero Section
+================================= */
+
+.hero {
+    min-height: 80vh;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 40px 20px;
+
+    background: linear-gradient(
+        135deg,
+        #e0f2fe,
+        #f5f3ff
+    );
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+    color: #111827;
+}
+
+.hero p {
+    font-size: 21px;
+    color: #4b5563;
+    margin-bottom: 30px;
+}
+
+
+/* ==============================
+   Button
+================================= */
+
+.btn {
+    display: inline-block;
+
+    background-color: #2563eb;
+    color: white;
+
+    text-decoration: none;
+
+    padding: 12px 25px;
+
+    border-radius: 6px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+
+/* ==============================
+   Skills Section
+================================= */
+
+.skills {
+    padding: 70px 8%;
+
+    text-align: center;
+
+    background-color: white;
+}
+
+.skills h2 {
+    font-size: 32px;
+
+    margin-bottom: 35px;
+
+    color: #111827;
+}
+
+.skill-box {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+
+    max-width: 900px;
+
+    margin: auto;
+}
+
+.card {
+    background-color: #f8fafc;
+
+    border: 1px solid #e5e7eb;
+
+    padding: 25px;
+
+    border-radius: 10px;
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+
+    border-color: #2563eb;
+}
+
+
+/* ==============================
+   Footer
+================================= */
+
+footer {
+    background-color: #111827;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+
+/* ==============================
+   Responsive Design
+================================= */
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+
+        gap: 15px;
+
+        padding: 20px;
+    }
+
+    nav ul {
+        gap: 15px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .skill-box {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* ==============================
+   Small Mobile Devices
+================================= */
+
+@media (max-width: 480px) {
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+    }
+
+}
+```
+/* ==============================
+   Contact Form
+================================= */
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto 40px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 14px;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 6px;
+
+    font-size: 16px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    outline: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #2563eb;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    border: none;
+    cursor: pointer;
+}
+
+.contact-info {
+    margin-top: 30px;
+}
+
+.contact-info h3 {
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    margin: 5px;
+}
